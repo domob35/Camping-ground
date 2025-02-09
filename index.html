@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자연애 캠핑장</title>
+    <link rel="stylesheet" href="./style/common.css" />
+    <!--link[tab]-->
+    <link rel="stylesheet" href="./style/main.css" />
+    <!--link[tab]-->
+    <!-- defer 키워드를 꼭!!! 넣는다. 않넣으면 DOM객체가 동작 안함. -->
+    <script defer src="./script/main.js"></script>
+    <script defer src="./script/jq.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- .wrap>header.header+main.main>.slider+.contents+.sights -->
+    <div class="wrap">
+      <header class="header">
+        <!-- .logo+.nav+.member -->
+        <div class="logo">
+          <!-- h1>a>{자연애 캠핑장} -->
+          <h1><a href="#">자연애 캠핑장</a></h1>
+        </div>
+        <div class="nav">
+          <!-- ul>li*5>a -->
+          <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="./html/guide.html">캠핑장 소개</a></li>
+            <li><a href="#">예약하기</a></li>
+            <li><a href="#">갤러리</a></li>
+            <li>
+              <a href="#">운영관리</a>
+              <!-- ul>li*3>a -->
+              <ul>
+                <li><a href="#">주문관리</a></li>
+                <li><a href="#">예약관리</a></li>
+                <li><a href="#">고객관리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="member">
+          <!-- a.btn*2 -->
+          <a href="#" class="btn">로그인</a>
+          <a href="#" class="btn">회원가입</a>
+        </div>
+      </header>
+      <main class="main">
+        <div class="slider">
+          <!-- .slide_wrap>.slide*4>div>h2+span -->
+          <div class="slide_wrap">
+            <div class="slide">
+              <div>
+                <h2>image1</h2>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+            <div class="slide">
+              <div>
+                <h2>image2</h2>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+            <div class="slide">
+              <div>
+                <h2>image3</h2>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+            <div class="slide">
+              <div>
+                <h2>image1</h2>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="notice">
+            <!-- h2[tab] -->
+            <h2>공지사항</h2>
+            <!-- ul>li>a+span -->
+            <ul>
+              <li>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus, delectus hello.</a
+                ><span>2024-09-24</span>
+              </li>
+              <li>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus, delectus.</a
+                ><span>2024-10-12</span>
+              </li>
+              <li>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus, delectus.</a
+                ><span>2024-11-24</span>
+              </li>
+              <li>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus, delectus.</a
+                ><span>2024-12-07</span>
+              </li>
+              <li>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus, delectus.</a
+                ><span>2024-12-25</span>
+              </li>
+            </ul>
+          </div>
+          <div class="reserve">
+            <h2>예약안내</h2>
+            <!-- div>span>a -->
+            <div>
+              <span
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nostrum nihil quos repellat itaque. Consequatur voluptate animi,
+                error voluptatum pariatur neque.<a href="#">예약하기</a></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="sights">
+          <h2>주변명소</h2>
+          <div class="sights_wrap">
+            <div class="img"><a href="#"></a></div>
+            <div class="img"><a href="#"></a></div>
+            <div class="img"><a href="#"></a></div>
+            <div class="img"><a href="#"></a></div>
+            <div class="img"><a href="#"></a></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- 주석: ctrl+/ , 복제: alt+shift + ↓ -->
+    <!-- footer.footer>.footer1+.footers>.footer2+.footer3 -->
+    <footer class="footer">
+      <div class="footer1">
+        <h1><a href="#">자연애 캠핑장</a></h1>
+      </div>
+      <div class="footers">
+        <div class="footer2">
+          <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="./html/guide.html">캠핑장 소개</a></li>
+            <li><a href="#">예약하기</a></li>
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">운영관리</a></li>
+          </ul>
+        </div>
+        <div class="footer3">COPYRIGHT 2024 KEAD ALL RIGHT RESETVED.</div>
+      </div>
+    </footer>
+  </body>
+</html>

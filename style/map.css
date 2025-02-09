@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/* 공통부분 */
+body {
+  background-color: #ebd4a9;
+}
+* {
+  margin: 0; /* m0 */
+  padding: 0; /* p0*/
+  text-decoration: none; /* tdn (a link의 밑줄 제거) */
+  list-style-type: none; /* lstn (li 태그의 점, 숫자 제거) */
+  box-sizing: border-box; /* box[tab]*/
+  color: #333; /* 아주 어두운 회색으로(검정같은 회색) 글자색 설정 */
+  font-size: 16px; /* 기본 글자 크기 16*/
+}
+/* 레이아웃 */
+.wrap {
+  width: 1280px; /* w1280*/
+  /* height: 850px;  */
+  /* h850 footer 100px 불포함 나중에 지우기 */
+  margin: 0 auto; /* m0-auto 위아래 여백 없음, 좌우 가운데 정렬*/
+  /* background-color: #3333; */
+  display: flex; /* disp header와 main을 나란히 배치*/
+}
+.wrap .header {
+  width: 200px; /* w200 */
+  height: 100%; /* h100p */
+}
+.header .logo {
+}
+.header .logo h1 {
+}
+.header .logo h1 a {
+  display: block;
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  background-color: darkolivegreen;
+  color: #fff; /* cfff 글자색 흰색*/
+  margin: 20px; /* m20*/
+  text-align: center; /* tac */
+  border-radius: 0 15px 0 15px;
+  font-size: 22px; /* fz22*/
+}
+
+.wrap .main {
+  width: 1080px; /* w1080*/
+  height: 100%; /* h100p*/
+  /* background-color: #3338; */
+}
+.wrap .main .slider {
+  width: 100%; /* w100p*/
+  height: 350px; /* h350*/
+  /* background-color: orange; */
+}
+.wrap .main .contents {
+  width: 100%; /* w100p */
+  height: 250px; /* h250*/
+}
+.wrap .main .sights {
+  width: 100%;
+  height: 250px;
+}
+.footer {
+  width: 1280px; /* w1280*/
+  height: 100px; /* h100 */
+  margin: 0 auto;
+  background-color: #3335;
+}
+
+/* 메뉴 */
+/* ul>li*5>a */
+.nav {
+}
+.nav > ul {
+  display: flex;
+  flex-direction: column;
+}
+.nav > ul > li {
+}
+.nav > ul > li > a {
+  display: block;
+  width: 160px; /* w160*/
+  height: 40px; /* h40*/
+  line-height: 40px; /* lh40px*/
+  background-color: darkolivegreen;
+  color: #fff; /* cfff 흰색 글자색*/
+  font-weight: bold; /* fwb 굵은 글씨*/
+  margin: 0 20px; /* 좌우 여백 20px*/
+  padding-right: 20px; /* pr20 오른쪽 내부 여백*/
+  text-align: right; /* tar : 오른쪽 정렬*/
+  border-radius: 0 10px 0 10px;
+  border-top: 1px solid #fff;
+  transition: 0.6s;
+}
+.nav > ul > li:hover > a {
+  background-color: orange;
+}
+.nav > ul > li > ul {
+}
+.nav > ul > li > ul > li {
+}
+.nav > ul > li > ul > li > a {
+  display: block;
+  width: 160px; /* w160*/
+  height: 0; /* h40*/
+  overflow: hidden;
+
+  line-height: 40px; /* lh40px*/
+  background-color: rgba(85, 107, 47, 0.7);
+  color: #fff; /* cfff 흰색 글자색*/
+  font-weight: bold; /* fwb 굵은 글씨*/
+  margin: 0 20px; /* 좌우 여백 20px*/
+  text-align: center; /* tac: 가운데 정렬*/
+  border-top: 1px solid #fff;
+  transition: 0.6s;
+}
+
+.nav > ul > li:hover > ul > li > a {
+  height: 40px;
+}
+.nav > ul > li > ul > li:hover > a {
+  background-color: olivedrab; /* bgc */
+  border-radius: 0 0 10px 10px; /* bdrd*/
+}
+.header {
+  position: relative;
+}
+.member {
+  position: absolute;
+  top: 450px;
+  width: 160px;
+  height: 50px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.member .btn {
+  display: block;
+  width: 78px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #3337;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+.member .btn:hover {
+  background-color: #333a;
+}
+
+.footer {
+  display: flex;
+  border-radius: 0 0 10px 10px;
+}
+.footer .footer1 {
+  width: 200px;
+  height: 100%;
+}
+.footer .footer1 h1 {
+}
+.footer .footer1 h1 a {
+  display: block;
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #777;
+  color: #fff; /* cfff 글자색 흰색*/
+  margin: 20px; /* m20*/
+  text-align: center; /* tac */
+  border-radius: 0 15px 0 15px;
+  font-size: 22px; /* fz22*/
+}
+.footer .footers {
+  width: 1080px;
+  height: 100%;
+}
+.footer .footers .footer2 {
+  width: 100%;
+  height: 50%;
+}
+.footer .footers .footer2 ul {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+.footer .footers .footer2 ul li {
+}
+.footer .footers .footer2 ul li a {
+  display: block;
+  width: 160px; /* w160*/
+  height: 30px; /* h40*/
+  line-height: 30px; /* lh40px*/
+  color: darkolivegreen; /* cfff 흰색 글자색*/
+  font-weight: bold;
+  text-align: center; /* tar : 오른쪽 정렬*/
+  border-left: 1px solid darkolivegreen;
+  transition: 0.6s;
+}
+.footer .footers .footer2 ul li:last-child a {
+  border-right: 1px solid darkolivegreen;
+}
+.footer .footers .footer2 ul li:hover a {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.footer .footers .footer3 {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}

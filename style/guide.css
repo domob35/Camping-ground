@@ -1,0 +1,133 @@
+/* 캠핑장 안내 */
+.guide {
+  padding-top: 20px; /*pt20*/
+  width: 100%; /*w100p*/
+  height: 470px; /*h410*/
+}
+.guide h2 {
+  width: 120px; /*w120*/
+  height: 40px; /*h40*/
+  line-height: 40px; /*lh40px*/
+  background-color: darkolivegreen; /*bgc[tab]orange*/
+  text-align: center; /*tac*/
+  color: #fff; /*c#fff*/
+  border-radius: 10px 10px 0 0;
+}
+.guide .guide_wrap {
+  width: 100%;
+  height: 410px;
+  background-image: url("../images/back4.jpg");
+  background-repeat: no-repeat; /*bgr*/
+  background-position: center; /*bgp*/
+  background-size: cover; /*bgz*/
+  border-radius: 0 15px 0 15px;
+  overflow: hidden;
+}
+.guide .guide_wrap .bgc {
+  background-color: #3338;
+  width: 100%;
+  height: 100%;
+}
+.guide .guide_wrap .bgc h3 {
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+.guide .guide_wrap .bgc table {
+  width: 80%;
+  background-color: rgba(85, 107, 47, 0.5);
+}
+.guide .guide_wrap .bgc table tr {
+}
+.guide .guide_wrap .bgc table tr th {
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+.guide .guide_wrap .bgc table tr td {
+  color: #fff;
+  border-top: 1px solid #fff8;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 15px;
+}
+.guide .guide_wrap .bgc ul {
+}
+.guide .guide_wrap .bgc ul li {
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+/* 캠핑장 위치안내 */
+.rules {
+  padding-top: 20px;
+}
+.rules h2 {
+  width: 120px; /*w120*/
+  height: 40px; /*h40*/
+  line-height: 40px; /*lh40px*/
+  background-color: orange; /*bgc[tab]orange*/
+  text-align: center; /*tac*/
+  color: #fff; /*c#fff*/
+  border-radius: 10px 10px 0 0;
+}
+.rules h2 a {
+  color: #fff;
+}
+.rules .rules_wrap {
+  display: flex; /*disp[tab]*/
+}
+.rules .rules_wrap ul {
+  width: 60%;
+  padding: 10px 20px;
+}
+.rules .rules_wrap ul li {
+  height: 30px;
+  line-height: 30px;
+}
+.rules .rules_wrap .img {
+  width: 40%;
+  background-image: url("../images/back2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 15px 0 15px;
+}
+
+/* 시설배치도 */
+.layout {
+  padding-top: 20px;
+  width: 100%;
+}
+.layout h2 {
+  width: 120px; /*w120*/
+  height: 40px; /*h40*/
+  line-height: 40px; /*lh40px*/
+  background-color: gray; /*bgc[tab]orange*/
+  text-align: center; /*tac*/
+  color: #fff; /*c#fff*/
+  border-radius: 10px 10px 0 0;
+}
+.layout .layout_wrap {
+  display: flex; /*disp[tab]*/
+  padding-top: 10px;
+}
+.layout .layout_wrap ul {
+  width: 50%;
+  padding: 10px 20px;
+}
+.layout .layout_wrap ul li {
+  height: 30px;
+  line-height: 30px;
+}
+.layout .layout_wrap .img {
+  width: 50%;
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0 15px 0 15px;
+  height: 400px;
+}
